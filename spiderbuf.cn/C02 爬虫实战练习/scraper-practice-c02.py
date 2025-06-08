@@ -5,7 +5,7 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
 # 浏览器配置优化（增强反反爬能力）
-edge_path = r"./../software/msedgedriver.exe"
+edge_path = r"../../software/msedgedriver.exe"
 options = webdriver.EdgeOptions()
 options.add_argument("--disable-blink-features=AutomationControlled")
 options.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")

@@ -14,5 +14,5 @@ response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.text, "lxml")
 tag_img = soup.find("img",{"class": "img-responsive center-block"})
 src = tag_img.get("src")[22:]   # data:image/png;base64,实际数据
-with open("./img.png", "wb") as f:
+with open("img.png", "wb") as f:
     f.write(base64.b64decode(src))

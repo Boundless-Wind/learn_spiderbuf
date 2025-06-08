@@ -2,7 +2,7 @@ from selenium import webdriver
 
 url = r"https://spiderbuf.cn/web-scraping-practice/selenium-fingerprint-anti-scraper"
 
-edge_path = r"./../software/msedgedriver.exe"
+edge_path = r"../../software/msedgedriver.exe"
 service = webdriver.EdgeService(edge_path)
 
 options = webdriver.EdgeOptions()
